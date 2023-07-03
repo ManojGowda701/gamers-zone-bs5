@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // console.log("this is internal");
+        // console.log(2 + 3);
+    </script>
+    <script src="external_js.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+  
+    <main class="container">
+        <div class="jsbasics">
+            <div class="form-control form-control-lg" >Enter value of a <input type="number" id="a"></div>
+            <div class="form-control form-control-lg" >Enter value of b <input type="number" id="b"></div>
+            <div class="results">Results
+                <span id="results">
+                    Result will be displayed here
+                </span>
+            </div>
+            <button id="add" class="btn btn-primary" onclick="add()">Add</button>
+            <button id="subtract" class="btn btn-primary" onclick="subtract()">Sub</button>
+            <button id="multiply" class="btn btn-primary" onclick="multiply()">Mulitply</button>
+            <button id="divide" class="btn btn-primary" onclick="divide()">Divide</button>
+        </div>
+        
+    </main>
+</body>
+
+</html>

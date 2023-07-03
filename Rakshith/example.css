@@ -1,0 +1,81 @@
+.container-fluid {
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    border-radius: 15px;
+    background-color: rgb(160, 99, 99);
+  }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+      width: 7%;
+    }
+
+    .top_logo {
+    padding-top: 15px;
+    margin-left: -15px;
+  }
+
+    .top_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto auto auto;
+  }
+
+  .left_head {
+  border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background-image: linear-gradient(120deg, rgb(19, 19, 86), #041a3a);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }
+    
+  .left_head > span {
+    border-radius: 5px;
+    padding:10px;
+    width: 120px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+  }
+
+  .left_head > span:hover {
+    width: 150px;
+    height: 25px;
+    color: white;
+    background-color: rgb(105, 107, 139);
+    text-align: center;
+    text-shadow: 0.8px 0.8px 1.6px #fff;
+}
+.right_head {
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.right_head > span {
+    text-shadow: 2px 2px 4px #000;
+  }
+  .icon {
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }

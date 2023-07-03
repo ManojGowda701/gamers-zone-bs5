@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <h4 class="display-6">Welcome to Gamers Zone</h4>
+        <p class="lead">Explore the latest games and connect with fellow gamers.</p>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <h1>Gamers Zone</h1>
+            <ul class="nav nav-tabs" id="gameTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="game1-tab" data-bs-toggle="tab" data-bs-target="#game1"
+                        type="button" role="tab" aria-controls="game1" aria-selected="true">Cyberpunk 2077</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="game2-tab" data-bs-toggle="tab" data-bs-target="#game2" type="button"
+                        role="tab" aria-controls="game2" aria-selected="false">The Witcher 3: Wild Hunt</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="game3-tab" data-bs-toggle="tab" data-bs-target="#game3" type="button"
+                        role="tab" aria-controls="game3" aria-selected="false">Apex Legends</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-3" id="gameTabsContent">
+                <div class="tab-pane fade show active" id="game1" role="tabpanel" aria-labelledby="game1-tab">
+                    <h3>Cyberpunk 2077</h3>
+                    <p>Cyberpunk 2077 is an open-world action-adventure game set in Night City, a megalopolis obsessed
+                        with
+                        power, glamour, and body modification.</p>
+                    <p>You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to
+                        immortality.</p>
+                    <p>Explore the vast city, make choices that shape the story, and uncover the dark secrets of Night
+                        City.</p>
+                </div>
+                <div class="tab-pane fade" id="game2" role="tabpanel" aria-labelledby="game2-tab">
+                    <h3>The Witcher 3: Wild Hunt</h3>
+                    <p>The Witcher 3: Wild Hunt is an open-world action role-playing game based on the book series by
+                        Andrzej
+                        Sapkowski.</p>
+                    <p>You play as Geralt of Rivia, a professional monster hunter known as a Witcher, on a quest to find
+                        his
+                        adopted daughter and defeat the Wild Hunt.</p>
+                    <p>Explore a vast, visually stunning fantasy world filled with rich storytelling, impactful choices,
+                        and
+                        challenging combat.</p>
+                </div>
+                <div class="tab-pane fade" id="game3" role="tabpanel" aria-labelledby="game3-tab">
+                    <h3>Apex Legends</h3>
+                    <p>Apex Legends is a free-to-play battle royale game set in the Titanfall universe.</p>
+                    <p>Team up with two other players and compete in fast-paced matches featuring a roster of unique
+                        characters
+                        with special abilities.</p>
+                    <p>Use your wits, skill, and teamwork to emerge as the last squad standing and become the Apex
+                        Champion.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
