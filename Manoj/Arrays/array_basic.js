@@ -25,6 +25,30 @@ let subjects = ['Maths','Social','Science'];
 subjects.push("English", 'Kananda');
 console.log(subjects);  //Output : ['Maths', 'Social', 'Science', 'English', 'Kananda']
 
+let num1 = [1, 2, 3, 4, 5];
+let num2 = ['Manoj','Sumanth','Rakshith'];
+let num3 = [6,7]
+let concat_arr = num1.concat(num2,num3);
+console.log(concat_arr); //Output: [1, 2, 3, 4, 5, 'Manoj', 'Sumanth', 'Rakshith', 6, 7]
+
+const letters = ["A", "B", "C"];
+const alphaNumeric = letters.concat(1, [2, 3]);
+console.log(alphaNumeric);      // Output : ['a', 'b', 'c', 1, 2, 3]
+
+let names = ['Manoj','Sumanth','Rakshith',"Lakshmikanth", "Deepak"];
+let result = names.filter(name => name.length >= 6);
+console.log(result);            //Output :  ['Sumanth', 'Rakshith', 'Lakshmikanth', 'Deepak']
+
+
+let names = ['Manoj','Sumanth','Rakshith',"Lakshmikanth", "Deepak"];
+let result = names.find(name => name.length >= 6);
+console.log(result);      //Output : Sumanth 
+
+let names = ['Manoj','Sumanth','Rakshith',"Lakshmikanth", "Deepak"];
+let result = names.findIndex(name => name.length >= 6);
+console.log(result);   //Output : 1
+
+
 //-------------------------------------------------------------------------------------------------------
 
 let num = [1, 2, 3, 4, 5];
