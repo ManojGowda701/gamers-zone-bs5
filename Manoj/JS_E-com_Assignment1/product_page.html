@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-
+     <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Custom CSS to set fixed height and width for the cards */
+    #cardContainer .card {
+      width: 185px; /* Adjust the desired width */
+      height: 500px; /* Adjust the desired height */
+    }
+    body {
+      background-color: rgb(77, 77, 172);
+    }
+  </style>
 </head>
 <body>
-    <main>
-        <h1>PRODUCTS</h1>
-        <div class="card" id="cardContainer">
-            <button type="button" class="btn btn-primary" id="addCardButton">Card</button>
-        </div>
-    </main>
-    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.nostyle.js"></script>
-    <script src="data.js"></script>
+  <div id="cardContainer" class="container mt-4"></div>
+  
+  
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="data.js"></script>
 </body>
 </html>

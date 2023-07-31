@@ -1,4 +1,4 @@
-let product_list = [
+let products_list = [
     {
       "id": 1,
       "name": "Doodad",
@@ -352,3 +352,48 @@ let product_list = [
   ]
 
 
+  function createCard(cardInfo) {
+    const card = $('<div class="card"></div>');
+    const cardBody = $('<div class="card-body"></div>');
+
+    // const idElement = $('<h5 class="card-title"></h5>').text(cardInfo.id);   //Depends on criteria
+    const nameElement = $('<h5 class="card-title"></h5>').text(cardInfo.name);
+    const imageElement = $('<img class="card-img-top" alt="Card image">').attr('src', cardInfo.imageURL);
+    // const imageURLElement = $('<p class="card-img-top" src=" "></p>').text(cardInfo.imageURL);
+    const descriptionElement = $('<p class="card-text"></p>').text(cardInfo.description);
+    const priceElement = $('<p class="card-text"></p>').text('Price :' + " " + cardInfo.price);
+    const addToCartButton = $('<button type="button" class="btn btn-primary">Add to Cart</button>');
+
+    cardBody.append( nameElement, imageElement, descriptionElement, priceElement, addToCartButton);
+    card.append(cardBody);
+
+    return card;
+  }
+
+  // Function to add cards to the container
+  function addCardsToContainer(cards) {
+    const cardContainer = $('#cardContainer');
+    // cardContainer.empty(); // Clear the container if needed
+
+    cards.forEach(function(cardInfo) {
+      const card = createCard(cardInfo);
+      cardContainer.append(card);
+    });
+  }
+
+  // Call the function to add cards to the container when the document is ready
+  $(document).ready(function() {
+    addCardsToContainer(products_list);
+  });
+
+   // Function to add CSS classes for flexbox layout
+   function setFlexLayout() {
+    const cardContainer = $('#cardContainer');
+    cardContainer.addClass('d-flex flex-row flex-wrap');
+    cardContainer.children('.card').addClass('flex-fill m-2');
+  }
+
+  // Call the function to apply flexbox layout when the document is ready
+  $(document).ready(function() {
+    setFlexLayout();
+  });
