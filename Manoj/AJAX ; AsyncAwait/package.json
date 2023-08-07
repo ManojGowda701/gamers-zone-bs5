@@ -1,0 +1,14 @@
+{
+  "name": "package.json",
+  "version": "0.0.1",
+  "description": "",
+  "main": "ajax1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xhr2": "^0.2.1"
+  }
+}
