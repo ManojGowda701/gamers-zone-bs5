@@ -1,5 +1,5 @@
 const ExcleR = {
-    name: Excler.co,
+    name: "ExclerCompany",
     employees: 20
 }
 
